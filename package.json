@@ -13,7 +13,7 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "mcp-use generate-types",
+    "postinstall": "mcp-use generate-types && node scripts/patch-mcp-use-windows.mjs",
     "build": "mcp-use build",
     "dev": "mcp-use dev",
     "start": "mcp-use start",
@@ -28,7 +28,7 @@
     "react-dom": "^19.2.4",
     "react-router": "^7.13.0",
     "tailwindcss": "^4.2.0",
-    "vite": "^8.0.3",
+    "vite": "^8.0.8",
     "zod": "4.3.5"
   },
   "devDependencies": {
